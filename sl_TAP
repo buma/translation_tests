@@ -21,7 +21,7 @@ ok 6 - Start: %(location)s at %(time_date)s <= Place, time and date
 ok 7 - [direction] to 
 ok 8 - [bus_direction] to 
 ok 9 - [tripoptions] Depart 
-not ok 10 - [itinerary] Depart , expected: Odhod result: Depart
+ok 10 - [itinerary] Depart 
 ok 11 - [itinerary] depart 
 # module: Other
 # test: Untraslated strings
