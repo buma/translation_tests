@@ -1,0 +1,37 @@
+currentLng set to: zh
+loaded: js/otp/locale/zh.json
+loaded: js/otp/locale/en.json
+# module: 
+# test: Translation test
+ok 1 - cur_translation needs to be object of translations not null/undefined
+# module: normal translation
+# test: Normal translation
+ok 2 - Transit
+# test: Normal translation special characters
+ok 3 - Zoom Out
+ok 4 - To Stop
+# test: Named parameters
+ok 5 - Error %(error_id)d <= 42
+ok 6 - Start: %(location)s at %(time_date)s <= Place, time and date
+# module: Context translation
+# test: different context
+ok 7 - [direction] to 
+ok 8 - [bus_direction] to 
+ok 9 - [tripoptions] Depart 
+ok 10 - [itinerary] Depart 
+ok 11 - [itinerary] depart 
+# module: plural translation
+# test: Singular
+testing plural with:  0 number
+not ok 12 - 0 <strong>%d</strong> bike available, expected: <strong>0</strong> 自行车可用 result: ERROR in library[sprintf] expecting number but found string
+testing plural with:  1 number
+ok 13 - 1 <strong>%d</strong> bike available
+testing plural with:  2 number
+not ok 14 - 2 <strong>%d</strong> bike available, expected: <strong>2</strong> 自行车可用 result: ERROR in library[sprintf] expecting number but found string
+testing plural with:  0 number
+not ok 15 - 0 %d Itinerary Returned, expected: 0 路线 result: ERROR in library[sprintf] expecting number but found string
+testing plural with:  1 number
+ok 16 - 1 %d Itinerary Returned
+testing plural with:  2 number
+not ok 17 - 2 %d Itinerary Returned, expected: 2 路线 result: ERROR in library[sprintf] expecting number but found string
+1..17
