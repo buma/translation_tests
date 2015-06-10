@@ -23,15 +23,15 @@ ok 11 - [itinerary] depart
 # module: plural translation
 # test: Singular
 testing plural with:  0 number
-not ok 12 - 0 <strong>%d</strong> bike available, expected: <strong>0</strong> 自行车可用 result: ERROR in library[sprintf] expecting number but found string
+ok 12 - 0 <strong>%d</strong> bike available
 testing plural with:  1 number
 ok 13 - 1 <strong>%d</strong> bike available
 testing plural with:  2 number
-not ok 14 - 2 <strong>%d</strong> bike available, expected: <strong>2</strong> 自行车可用 result: ERROR in library[sprintf] expecting number but found string
+ok 14 - 2 <strong>%d</strong> bike available
 testing plural with:  0 number
-not ok 15 - 0 %d Itinerary Returned, expected: 0 路线 result: ERROR in library[sprintf] expecting number but found string
+ok 15 - 0 %d Itinerary Returned
 testing plural with:  1 number
 ok 16 - 1 %d Itinerary Returned
 testing plural with:  2 number
-not ok 17 - 2 %d Itinerary Returned, expected: 2 路线 result: ERROR in library[sprintf] expecting number but found string
+ok 17 - 2 %d Itinerary Returned
 1..17

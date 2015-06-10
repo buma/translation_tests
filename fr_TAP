@@ -27,11 +27,11 @@ ok 12 - 1 <strong>%d</strong> bike available
 testing plural with:  2 number
 ok 13 - 2 <strong>%d</strong> bike available
 testing plural with:  0 number
-not ok 14 - 0 <strong>%d</strong> bike available, expected: <strong>0</strong> vélo disponible result: ERROR in library[sprintf] expecting number but found string
+ok 14 - 0 <strong>%d</strong> bike available
 testing plural with:  1 number
 ok 15 - 1 %d Itinerary Returned
 testing plural with:  2 number
 ok 16 - 2 %d Itinerary Returned
 testing plural with:  0 number
-not ok 17 - 0 %d Itinerary Returned, expected: 0 itinéraire trouvé result: ERROR in library[sprintf] expecting number but found string
+ok 17 - 0 %d Itinerary Returned
 1..17

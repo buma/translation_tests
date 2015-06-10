@@ -27,15 +27,15 @@ ok 13 - Kiss and Ride
 # module: plural translation
 # test: Singular
 testing plural with:  1 number
-ok 14 - 1 <strong>%d</strong> bike available
+not ok 14 - 1 <strong>%d</strong> bike available, expected: <strong>1</strong> bike available result: ERROR in library[sprintf] expecting number but found string
 testing plural with:  2 number
-ok 15 - 2 <strong>%d</strong> bike available
+not ok 15 - 2 <strong>%d</strong> bike available, expected: <strong>2</strong> bikes available result: ERROR in library[sprintf] expecting number but found string
 testing plural with:  0 number
-ok 16 - 0 <strong>%d</strong> bike available
+not ok 16 - 0 <strong>%d</strong> bike available, expected: <strong>0</strong> bikes available result: ERROR in library[sprintf] expecting number but found string
 testing plural with:  1 number
-ok 17 - 1 %d Itinerary Returned
+not ok 17 - 1 %d Itinerary Returned, expected: 1 Itinerary Returned result: ERROR in library[sprintf] expecting number but found string
 testing plural with:  2 number
-ok 18 - 2 %d Itinerary Returned
+not ok 18 - 2 %d Itinerary Returned, expected: 2 Itineraries Returned result: ERROR in library[sprintf] expecting number but found string
 testing plural with:  0 number
-ok 19 - 0 %d Itinerary Returned
+not ok 19 - 0 %d Itinerary Returned, expected: 0 Itineraries Returned result: ERROR in library[sprintf] expecting number but found string
 1..19
