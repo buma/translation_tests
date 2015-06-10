@@ -1,14 +1,17 @@
-currentLng set to: it
-loaded: js/otp/locale/it.json
-loaded: js/otp/locale/en.json
+LANG:it
+URL: js/otp/locale/it.json
+Found locale data
+[object Object]
+Resolving
+Resolved
 # module: 
 # test: Translation test
 ok 1 - cur_translation needs to be object of translations not null/undefined
 # module: normal translation
 # test: Normal translation
-ok 2 - Transit
+not ok 2 - Transit, expected: Mezzi pubblici result: Transit
 # test: Normal translation special characters
-ok 3 - Zoom Out
+not ok 3 - Zoom Out, expected: Zoom out result: Zoom Out
 ok 4 - To Stop
 # test: Named parameters
 ok 5 - Error %(error_id)d <= 42
@@ -17,9 +20,9 @@ ok 6 - Start: %(location)s at %(time_date)s <= Place, time and date
 # test: different context
 ok 7 - [direction] to 
 ok 8 - [bus_direction] to 
-ok 9 - [tripoptions] Depart 
-ok 10 - [itinerary] Depart 
-ok 11 - [itinerary] depart 
+not ok 9 - [tripoptions] Depart , expected: Partenza result: Depart
+not ok 10 - [itinerary] Depart , expected: Parti da result: Depart
+not ok 11 - [itinerary] depart , expected: Partenza result: depart
 # module: Other
 # test: Untraslated strings
 ok 12 - Bicycle rental station

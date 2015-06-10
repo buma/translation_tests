@@ -1,5 +1,9 @@
-currentLng set to: en
-loaded: js/otp/locale/en.json
+LANG:en
+URL: js/otp/locale/en.json
+Found locale data
+[object Object]
+Resolving
+Resolved
 # module: 
 # test: Translation test
 ok 1 - cur_translation needs to be object of translations not null/undefined
