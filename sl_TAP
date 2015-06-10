@@ -1,6 +1,9 @@
-currentLng set to: sl
-loaded: js/otp/locale/sl.json
-loaded: js/otp/locale/en.json
+LANG:sl
+URL: js/otp/locale/sl.json
+Found locale data
+[object Object]
+Resolving
+Resolved
 # module: 
 # test: Translation test
 ok 1 - cur_translation needs to be object of translations not null/undefined
@@ -18,7 +21,7 @@ ok 6 - Start: %(location)s at %(time_date)s <= Place, time and date
 ok 7 - [direction] to 
 ok 8 - [bus_direction] to 
 ok 9 - [tripoptions] Depart 
-ok 10 - [itinerary] Depart 
+not ok 10 - [itinerary] Depart , expected: Odhod result: Depart
 ok 11 - [itinerary] depart 
 # module: Other
 # test: Untraslated strings

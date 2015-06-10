@@ -1,6 +1,9 @@
-currentLng set to: de
-loaded: js/otp/locale/de.json
-loaded: js/otp/locale/en.json
+LANG:de
+URL: js/otp/locale/de.json
+Found locale data
+[object Object]
+Resolving
+Resolved
 # module: 
 # test: Translation test
 ok 1 - cur_translation needs to be object of translations not null/undefined
@@ -17,9 +20,9 @@ ok 6 - Start: %(location)s at %(time_date)s <= Place, time and date
 # test: different context
 ok 7 - [direction] to 
 ok 8 - [bus_direction] to 
-ok 9 - [tripoptions] Depart 
-ok 10 - [itinerary] Depart 
-ok 11 - [itinerary] depart 
+not ok 9 - [tripoptions] Depart , expected: Abfahrt result: Depart
+not ok 10 - [itinerary] Depart , expected: Abfahrt result: Depart
+not ok 11 - [itinerary] depart , expected: Abfahrt result: depart
 # module: Other
 # test: Untraslated strings
 ok 12 - Kiss and Ride
